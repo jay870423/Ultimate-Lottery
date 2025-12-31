@@ -33,6 +33,5 @@
 │   ├── LotteryScreen.tsx   # 抽奖主屏幕组件 (动画、展示)
 │   └── AdminPanel.tsx      # 管理员控制面板 (配置、导入导出)
 └── utils/
-    └── lotteryUtils.ts     # 核心工具函数 (抽奖算法、Excel处理、动画触发)
-
+    └── lotteryUtils.ts     # 核心工具函数 (抽奖算法、Excel处理、动画触发)      
 
