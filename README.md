@@ -34,7 +34,8 @@
 │   └── AdminPanel.tsx      # 管理员控制面板 (配置、导入导出)
 └── utils/
     └── lotteryUtils.ts     # 核心工具函数 (抽奖算法、Excel处理、动画触发)
-	
+
+
 ## 4. 数据模型 (Data Models)
 ### 4.1 参与者 (Participant)
 interface Participant {
