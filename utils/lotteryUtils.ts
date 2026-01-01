@@ -12,7 +12,16 @@ export const triggerConfetti = () => {
     const duration = 3000;
     const end = Date.now() + duration;
 
+    // A more explosive initial burst
+    window.confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+      colors: ['#ff00ff', '#00ffff', '#bd00ff', '#ffffff']
+    });
+
     (function frame() {
+      // Launch confetti from the left edge
       window.confetti({
         particleCount: 5,
         angle: 60,
@@ -20,6 +29,7 @@ export const triggerConfetti = () => {
         origin: { x: 0 },
         colors: ['#ff00ff', '#00ffff', '#ffffff']
       });
+      // Launch confetti from the right edge
       window.confetti({
         particleCount: 5,
         angle: 120,
